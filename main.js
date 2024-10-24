@@ -45,3 +45,20 @@ function trocarImagem() {
 
 // Muda a imagem de golfinho a cada 5 segundos
 setInterval(trocarImagem, 5000);
+const imagensGolfinhos = [
+    'images/golfinho1.jpg',
+    'images/golfinho2.jpg',
+    'images/golfinho3.jpg'
+];
+
+let imagemAtual = 0;
+
+function trocarImagem() {
+    imagemAtual = (imagemAtual + 1) % imagensGolfinhos.length;
+    const imgElement = document.getElementById('imagem-golfinho');
+    imgElement.src = imagensGolfinhos[imagemAtual];
+}
+
+// Muda a imagem de golfinho a cada 5 segundos
+setInterval(trocarImagem, 5000);
+
