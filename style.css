@@ -65,3 +65,23 @@ a {
 a:hover {
     text-decoration: underline;
 }
+/* Estilos para a galeria de imagens */
+.galeria {
+    display: flex;
+    justify-content: space-around; /* Distribui as imagens uniformemente */
+    flex-wrap: wrap; /* Faz com que as imagens se organizem em várias linhas, se necessário */
+    padding: 20px;
+}
+
+.imagem-galeria {
+    width: 30%; /* Cada imagem ocupa 30% da largura da galeria */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Bordas arredondadas nas imagens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil nas imagens */
+    transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
+}
+
+.imagem-galeria:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
